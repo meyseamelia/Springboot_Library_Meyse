@@ -1,0 +1,30 @@
+<p>buku-new-form works!</p>
+<div class="container">
+    <form #formBuku="ngForm" (ngSubmit)="save (formBuku.value)">
+        <div class="form-group row">
+            <label for="txtISBN" class="form-label mb-3" style="width: 300px;"> JUDUL : </label>
+            <input type="text" id="txtJUDUL" name="JUDUL" class="form-control" ngModel>
+        </div>
+        <div class="form-group row">
+            <label for="txtISBN" class="form-label mb-3" style="width: 300px;"> ISBN : </label>
+            <input type="text" id="txtISBN" name="ISBN" class="form-control" ngModel>
+        </div>
+        <div class="form-group row">
+            <label for="txtPENGARANG" class="form-label mb-3" style="width: 300px;"> PENGARANG: </label>
+            <input type="text" id="txtPENGARANG" name="PENGARANG" class="form-control" ngModel>
+        </div>
+        <div class="form-group row">
+            <label for="txtTGLTERBIT" class="form-label mb-3" style="width: 300px;"> TGLTERBIT : </label>
+            <input type="date" id="txtTGLTERBIT" name="TGLTERBIT" class="form-control" ngModel>
+        </div>
+        <div class="form-group row">
+            <label for="txtPENERBIT" class="form-label mb-3" style="width: 300px;"> PENERBIT : </label>
+            <input type="text" id="txtPENERBIT" name="PENERBIT" class="form-control" ngModel>
+        </div>
+        <div class="form-group row">
+            <label for="txtUSERID" class="form-label mb-3" style="width: 300px;"> USERID: </label>
+            <input type="text" id="txtUSERID" name="USERID" class="form-control" ngModel>
+        </div>
+        <button type="submit" class="btn btn-success">SAVE</button>
+    </form>
+</div>
